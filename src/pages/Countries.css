@@ -1,0 +1,140 @@
+body, html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    height: 80px;
+    box-shadow: 0 1px 5px 0 rgb(0 0 0 / 15%);
+}
+
+.header-logo{
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+    font-size: 25px;
+    padding: 30px;
+}
+
+.header-search-bar{
+    padding: 20px;
+    width: 40%;
+}
+.mainPage-body{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+
+
+.Results{
+    width: 60%;
+    padding: 20px;
+}
+
+.filter{
+    width: 40%;
+}
+
+/*posts styling START*/
+.post{
+    display: flex;
+    width: 100%;
+    box-shadow: 0 0 5px 0 rgb(0 0 0 / 15%);
+    border-radius: 3%;
+    margin-bottom: 40px;
+    transition: 0.2s;
+}
+
+.post:hover{
+    background-color: rgba(114, 114, 114, 0.096);
+    box-shadow: 0 0 15px 0 rgb(0 0 0 / 15%);
+    cursor: pointer;
+}
+
+.postInfo{
+    width: 60%;
+}
+
+.HouseName{
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 25px;
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+.UniName{
+    font-size: 25px;
+    padding-left: 20px;
+}
+.location{
+    display: inline-block;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.location div{
+    display: inline;
+    text-transform: capitalize;
+}
+
+.rating{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*posts styling END*/
+
+/*filter START*/
+
+.filterTitle{
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+.numReviews{
+    font-size: 20px;
+}
+
+.uwu{
+    padding-top: 10px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#f{
+    font-size: 22px;
+}
+
+#f a{
+    color: rgba(0, 0, 255, 0.301);
+}
+
+
+/*filer END*/
+
+@media screen and (max-width: 1080px) {
+    .mainPage-body{
+        display: block;
+        margin: 40px;
+    }
+    .Results{
+        width: 100%;
+        padding: 0px;
+    }
+    .post{
+        width: 100%;
+    }
+
+    .filter{
+        margin-bottom: 30px;
+    }
+}

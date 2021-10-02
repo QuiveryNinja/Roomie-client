@@ -1,0 +1,104 @@
+body, html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+
+/*posts styling START*/
+.post1{
+    display: block;
+    width: 100%;
+    border-radius: 3%;
+    padding-bottom: 5px;
+    transition: 0.2s;
+}
+
+.jh{
+    display: flex;
+}
+
+.postInfo1{
+    width: 60%;
+    padding: 10px;
+}
+
+.HouseName{
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 25px;
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+.UniName{
+    font-size: 25px;
+    padding-left: 20px;
+}
+.location{
+    display: inline-block;
+    font-size: 20px;
+}
+.location div{
+    display: inline;
+}
+
+.rating{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mainPage-body{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+@media screen and (max-width: 1080px) {
+    .mainPage-body{
+        display: block;
+        margin: 30px;
+    }
+    .post1{
+        width: 100%;
+    }
+    .filter{
+        margin-bottom: 30px;
+    }
+}
+/*posts styling END*/
+
+/*filter START*/
+.filter{
+    width: 40%;
+}
+
+.filterTitle{
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+.numReviews{
+    font-size: 20px;
+}
+
+.uwu{
+    padding-top: 10px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.uttID{
+    text-transform: capitalize;
+}
+
+.text{
+    margin: 30px;
+    margin-top: 0px;
+    font-size: 18px;
+}
+/*filer END*/

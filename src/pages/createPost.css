@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    height: 80px;
+    box-shadow: 0 1px 5px 0 rgb(0 0 0 / 15%);
+}
+
+.header-logo{
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+    font-size: 25px;
+    padding: 30px;
+}
+.header-logo a{
+    text-decoration: none;
+    color: black;
+}
+
+.title{
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 1px;
+    padding: 30px;
+}
+
+.formContainer{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.search-Inputs{
+    box-shadow: 0 0 5px 0 rgb(0 0 0 / 15%);
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-bottom: 1px solid rgba(0,0,0,.15);
+    color: #333;
+    padding: 7px;
+    padding-left: 20px;
+    margin: 30px;
+    margin-bottom: 30px;
+}
+
+.search-Inputs div{
+    width: 100%;
+}
+
+.data-Result {
+    width: 90%;
+    height: auto;
+    max-height: 200px;
+    background-color: rgba(0, 38, 255, 0.096);
+    overflow: hidden;
+    overflow-y: auto;
+    margin: 30px;
+
+    margin-top: 0px;
+    }
+    
+    .data-Result::-webkit-scrollbar {
+    display: none;
+    }
+    
+    .data-Result .data-Item {
+    width: 100%;
+    margin: 0;
+    height: 50px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    color: black;
+    }
+    
+    .data-Item p {
+    margin-left: 10px;
+    }
+    .data-Item {
+    text-decoration: none;
+    }
+    
+    .data-Item:hover {
+    background-color: lightgrey;
+    }
+
+.search-Inputs input{
+    width: 100%;
+    height: 30px;
+    font-size: 18px;
+    outline: 0;
+    border: 0;    
+
+    font-family: 'Nunito', sans-serif;
+}
+
+.k{
+    width: 100%;
+    height: 30px;
+}
+
+.field{
+    top: 40%;
+    width: 100%;
+}
+
+#lab{
+    display: block;
+    margin-left: 30px;
+}
+
+span{
+    color: red;
+}
+.error{
+    color: red;
+    margin-left: 30px;
+}
+
+.xs{
+    box-shadow: 0 0 5px 0 rgb(0 0 0 / 15%);
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-bottom: 1px solid rgba(0,0,0,.15);
+    color: #333;
+    padding: 7px;
+    padding-left: 20px;
+    margin: 30px;
+}
+
+#inputCreatePost{
+    width: 100%;
+    height: 30px;
+    font-size: 18px;
+    outline: 0;
+    border: 0;  
+    font-family: 'Nunito', sans-serif;
+}
+
+input{
+    text-transform: capitalize;
+}
+
+.xe{
+    box-shadow: 0 0 5px 0 rgb(0 0 0 / 15%);
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-bottom: 1px solid rgba(0,0,0,.15);
+    color: #333;
+    padding: 7px;
+    padding-left: 20px;
+    margin: 30px;
+    width: 100%;
+    height: 100px;
+    font-size: 18px;
+    outline: 0;
+    border: 0;  
+    font-family: 'Nunito', sans-serif;
+}
+
+#but{
+    margin: 10px;
+    margin-left: 30px;
+    
+}
+
+#butt{
+    margin: 10px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.afterSend{
+    font-size: 25px;
+    margin: 30px;
+    color: rgba(75, 177, 75, 0.767);
+    display: none;
+}
+
+
