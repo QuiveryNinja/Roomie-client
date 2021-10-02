@@ -66,8 +66,8 @@ body, html{
 
     font-family: 'Nunito', sans-serif;
 }
+
 ::-webkit-input-placeholder {
-    font-size: 80px;
     transition: color 0.2s ease;
     padding: 2%;
 }
