@@ -36,8 +36,6 @@ import UK from "./pages/Country/United-Kingdom";
 
 function App() {
 
-  console.log('poop')
-
   return (
     <div className="App">
       
@@ -72,7 +70,7 @@ function App() {
           <Route path="/country/slovakia" exact component={SLO} />
           <Route path="/country/slovenia" exact component={SLOV} />
           <Route path="/country/spain" exact component={SPA} />
-          v<Route path="/country/sweden" exact component={SWE} />
+          <Route path="/country/sweden" exact component={SWE} />
           <Route path="/country/united-kingdom" exact component={UK} />
           <Route path="/createpost" exact component={CreatePost} />
           <Route path="/post/:id" exact component={Post} />
