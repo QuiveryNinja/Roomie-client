@@ -41,8 +41,8 @@ function App() {
       
       <Router>
         <Switch>
-          <Route path="/" exact component={Landing} />
-          <Route path="/home" exact component={Home} />
+          <Route path="/landing" exact component={Landing} />
+          <Route path="/" exact component={Home} />
           <Route path="/country/austria" exact component={Au} />
           <Route path="/country/belgium" exact component={Bel} />
           <Route path="/country/bulgaria" exact component={BUL} />
