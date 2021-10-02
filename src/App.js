@@ -36,10 +36,11 @@ import UK from "./pages/Country/United-Kingdom";
 
 function App() {
 
-
+  console.log('poop')
 
   return (
     <div className="App">
+      
       <Router>
         <Switch>
           <Route path="/" exact component={Landing} />
