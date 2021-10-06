@@ -27,7 +27,7 @@ function United_Kingdom() {
     let history = useHistory()
 
     useEffect(() => {
-      axios.get("http://localhost:2000/allReviews").then((response)=>{
+      axios.get("https://roomie-api-mysql.herokuapp.com/allReviews").then((response)=>{
         setListOfPosts(response.data)
         setLoading(true)
       })

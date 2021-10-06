@@ -38,7 +38,7 @@ function CreatePost() {
 
     const onSubmit = (data, {resetForm}) =>{
         console.log(data)
-        axios.post("http://localhost:2000/allReviews", data)
+        axios.post("https://roomie-api-mysql.herokuapp.com/allReviews", data)
         resetForm({values: ''})
     }
 

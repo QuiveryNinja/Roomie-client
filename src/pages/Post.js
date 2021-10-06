@@ -26,7 +26,7 @@ function Post() {
     const [loading, setLoading] = useState(false);
 
     useEffect(() => {
-        axios.get(`http://localhost:2000/allReviews/byId/${id}`).then((response)=>{
+        axios.get(`https://roomie-api-mysql.herokuapp.com/allReviews/byId/${id}`).then((response)=>{
             setPostObject(response.data)
         })
     }, [id])
@@ -39,7 +39,7 @@ function Post() {
 
 
     useEffect(() => {
-        axios.get("http://localhost:2000/allReviews").then((response)=>{
+        axios.get("https://roomie-api-mysql.herokuapp.com/allReviews").then((response)=>{
           setListOfPosts(response.data)
           setLoading(true)
         })
