@@ -181,7 +181,7 @@ function Spain() {
                                                 <div className="stars">
                                                     <Box component="fieldset" mb={2} borderColor="transparent">
                                                         <Typography className="int" component="legend"> {r} </Typography>
-                                                        <Rating name="read-only" value={r} readOnly />
+                                                        <Rating className='w' name="read-only" value={r} readOnly />
                                                         <div> {value.ratLen.length} reviews </div>
                                                     </Box>
                                                 </div>
@@ -195,7 +195,7 @@ function Spain() {
                                     return null
                                 }
                         }): <Box><CircularProgress></CircularProgress></Box>}
-                        <div id='f'>Can't find your dorm? <a href="/createpost">Add it here!</a></div>
+                        <div id='f'>Can't find your room? <a href="/createpost">Add it here!</a></div>
                     </div>
                     
                     

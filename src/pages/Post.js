@@ -30,7 +30,6 @@ function Post() {
             setPostObject(response.data)
         })
     }, [id])
-    console.log('poop')
     
     const theme = createTheme({
         palette: {
@@ -63,12 +62,22 @@ function Post() {
     }
     if(checked === 'UniName'){
         posts.sort((a,b)=>a.UniName.localeCompare(b.UniName))
-        console.log(posts)
         
         
     }else if(checked === 'rating'){
         posts.sort((a,b)=>b.rating - a.rating)
     }
+
+    var ovr = 0
+    var y = 0
+    for(var i=0;i<posts.length;i++){
+        if(posts[i].houseName.toLowerCase() === postObject.houseName.toLowerCase()){
+            ovr += posts[i].rating
+            y+=1
+        }
+        
+    }
+    ovr = ovr/y
 
 
 
@@ -92,6 +101,7 @@ function Post() {
                     <div className="filterTitle">
                         <b>{postObject.houseName.toUpperCase()}</b>
                     </div>
+                    <div>Overall average rating<b> {ovr.toFixed(1)}</b></div>
                     <div className="uwu">Sort</div>
                     <ThemeProvider theme={theme}>
                         <div className="sort1">
@@ -105,7 +115,6 @@ function Post() {
                             </FormControl>
                         </div>
                     </ThemeProvider>
-                    <div className="uwu">Filter</div>
                 </div>       
 
             <div className='Results'>
@@ -126,7 +135,7 @@ function Post() {
                                         <div className="stars">
                                             <Box component="fieldset" mb={2} borderColor="transparent">
                                                 <Typography className="int" component="legend"> {value.rating} </Typography>
-                                                <Rating name="read-only" value={value.rating} readOnly />
+                                                <Rating className='w' name="read-only" value={value.rating} readOnly />
                                             </Box>
                                         </div>
                                     </ThemeProvider>

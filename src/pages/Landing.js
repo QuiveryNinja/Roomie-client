@@ -34,7 +34,8 @@ function Landing() {
                         <span className='ut'> easier</span>
                     </div>
                     <div class="info-text-content">
-                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here'
+                        People from all over the world can share their experience on Roomie so you can find the room that best suits your lifestyle. 
+                        And it isn't only about finding the best room, it's also about finding the ones to avoid.
                     </div>
                 </div>
                 <div className="testimony-images">

@@ -48,7 +48,7 @@ body, html{
     box-shadow: 0 0 5px 0 rgb(0 0 0 / 15%);
     display: flex;
     align-items: center;
-    background: #fff;
+    background-color: #fff;
     border-bottom: 1px solid rgba(0,0,0,.15);
     color: #333;
     padding: 7px;
@@ -56,6 +56,7 @@ body, html{
 }
 .dataResult{
     position: absolute;
+    background: #fff;
 }
 .searchInputs input{
     width: 100%;
@@ -66,10 +67,15 @@ body, html{
 
     font-family: 'Nunito', sans-serif;
 }
+@media only screen and (max-width: 1025px) {
+    .landing-text{
+        font-size: 14px;
+        width: 50%;
+    }
+}
 
 ::-webkit-input-placeholder {
     transition: color 0.2s ease;
-    padding: 2%;
 }
 input:focus::placeholder{
     color: transparent;
@@ -93,24 +99,26 @@ input:focus::placeholder{
   }
   
 .dataResult {
-width: 100%;
-height: auto;
-max-height: 200px;
-background-color: white;
-overflow: hidden;
-overflow-y: auto;
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    background: white;
+    overflow: hidden;
+    overflow-y: auto;
+    position: absolute;
 }
 
 .dataResult::-webkit-scrollbar {
-display: none;
+    display: none;
 }
 
 .dataResult .dataItem {
-width: 100%;
-height: 50px;
-display: flex;
-align-items: center;
-color: black;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: black;
+    background-color: white;
 }
 
 .dataItem p {
@@ -135,7 +143,7 @@ background-color: lightgrey;
     font-size: 28px;
     margin-bottom: 0;
     line-height: 40px;
-    position: relative;
+    
     text-align: left;
 }
 
@@ -153,6 +161,7 @@ background-color: lightgrey;
 .info-text-content{
     font-size: 22px;
     line-height: 40px;
+    text-align: center;
 }
 
 .testimony-images{
@@ -193,12 +202,6 @@ background-color: lightgrey;
     padding-left: 50px;
     padding-top: 5px;
     padding-bottom: 5px;
-}
-
-@media only screen and (max-width: 650px) {
-    .f-countries a{
-        font-size: 15px;
-    }
 }
 
 .f-countries{
@@ -242,4 +245,95 @@ background-color: lightgrey;
 .footer-logo{
     width: 10%;
 }
+
+@media only screen and (max-width: 650px) {
+    .f-countries a{
+        font-size: 15px;
+    }
+    .landing-text{
+        font-size: 10px;
+        width: 60%;
+    }
+    .section-testimony{
+        padding: 40px;
+    }
+    .info-text-content{
+        font-size: 18px;
+        line-height: 30px;
+        
+    }
+    .footer-logo{
+        width: 20%;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .home-search{
+        width: 60%;
+        margin-top: 50px;
+    }
+    .searchInputs{
+        padding: 5px;
+    }
+    .searchInputs input{
+        height: 20px;
+        font-size: 14px;
+    }
+    .testimony-images{
+        display: block;
+    }
+    .tstImg{
+        width: 60%;
+    }
+    .tstImg1{
+        width: 50%;
+    }
+    .tstImg2{
+        width: 40%;
+    }
+    .test{
+        padding: 15px;
+    }
+}
+
+
+@media only screen and (max-width: 369px) {
+    .f-countries a{
+        font-size: 10px;
+    }
+    .f-title{
+        font-size: 12px;
+        padding: 0px;
+        text-align: center;
+    }
+    .landing-text{
+        font-size: 9px;
+    }
+
+    .info-text-title{
+        font-size: 23px;
+    }
+    .info-text-content{
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .tstImg{
+        width: 60%;
+        box-shadow: 6px 6px 2px 1px rgba(0, 0, 255, .2);
+    }
+    .tstImg1{
+        width: 50%;
+        box-shadow: -6px -6px 2px 1px rgba(255, 0, 0, 0.466);
+    }
+    .tstImg2{
+        width: 40%;
+        box-shadow: 5px -5px 2px 1px rgba(0, 255, 55, 0.336);
+    }
+    .contact div{
+        font-size: 20px;
+    }
+}
+
+
+
+
 

@@ -58,7 +58,7 @@ body, html{
     margin: 30px;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1020px) {
     .mainPage-body{
         display: block;
         margin: 30px;
@@ -74,7 +74,8 @@ body, html{
 
 /*filter START*/
 .filter{
-    width: 40%;
+    width: 80%;
+
 }
 
 .filterTitle{
@@ -102,3 +103,22 @@ body, html{
     font-size: 18px;
 }
 /*filer END*/
+
+@media only screen and (max-width: 425px) {
+    body{
+        font-size: 13px;
+    }
+
+    .w span{
+        font-size: 1rem;
+    }
+    .numReviews{
+        font-size: 16px;
+    }
+    .HouseName{
+        font-size: 16px;
+    }
+    .location{
+        font-size: 15px;
+    }
+}

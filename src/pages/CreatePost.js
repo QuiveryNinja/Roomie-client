@@ -6,6 +6,7 @@ import * as Yup from 'yup'
 import { useForm } from "react-hook-form";
 import Slider from "./SliderUI"
 import Button from "@material-ui/core/Button";
+import InfoIcon from '@mui/icons-material/Info';
 
 import DATA from '../data/countries.json'
 import './createPost.css'
@@ -43,7 +44,19 @@ function CreatePost() {
 
     const [filteredData, setFilteredData] = useState([])
 
+    const inf = document.getElementsByClassName('more-info');
     
+    const showInfo = (event) =>{
+        for(var i=0;i<inf.length;i++){
+            inf[i].style.display = 'flex';
+        }
+        
+    }
+    const hideInfo = (event) =>{
+        for(var i=0;i<inf.length;i++){
+            inf[i].style.display = 'none';
+        }
+    }
 
     
 
@@ -133,7 +146,18 @@ function CreatePost() {
                                 </Field>
                             </div>
                             
-                            <label id="lab">Write something...</label>
+                            <div className='uu'>
+                                <label id="lab">
+                                    Write something...
+                                </label>
+                                <InfoIcon onMouseOver={showInfo} onMouseOut={hideInfo} onClick={showInfo}></InfoIcon>
+                                <div className='more-info'>
+                                    Make sure to include useful information such as:<br/>
+                                    - The amenities provided<br/>
+                                    - When did you live there?<br/>
+                                </div>
+                            </div>
+                            
                             <ErrorMessage className="error" name="postText" component="span" />
                             <Field className='xe' component='textarea' ref={register}  name="postText" placeholder="" />
 
@@ -149,12 +173,7 @@ function CreatePost() {
                 </Form>
             </Formik>
         </div>
-        <div className="afterSend">
-            <div className='tks'>
-                You have successfully submitted your review. Congrats!
-            </div>
-            <div>Return to the home page <a href='/'>here</a></div>
-        </div>
+        
         </main>
         
         
